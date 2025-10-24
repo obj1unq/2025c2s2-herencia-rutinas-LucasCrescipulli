@@ -1,0 +1,13 @@
+import rutinas.*
+
+describe "rutinas"{
+    
+    test "calorías que quema la rutina de Running"{
+        const correrEnLaPlaya = new Running(intensidad = 1.2)
+        
+    }
+
+
+
+
+}
