@@ -9,17 +9,14 @@ class Rutina{
 
 class Running inherits Rutina{
     override method descanso(){
-        return if (tiempo > 20){
-            5
-        }
-        else {
-            2
-        }
+        return if (tiempo > 20) {5} else {2}
     }
 }
 
 class Maraton inherits Running{
-
+    override method caloriasQueQuema(){
+        return super() * 2 
+    }
 }
 
 class Remo inherits Rutina{
