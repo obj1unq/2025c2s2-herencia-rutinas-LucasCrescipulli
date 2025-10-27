@@ -3,8 +3,10 @@ import rutinas.*
 describe "rutinas"{
     
     test "calorías que quema la rutina de Running"{
-        const correrEnLaPlaya = new Running(intensidad = 1.2)
-        
+        const correrEnLaPlaya = new Running(intensidad = 1.2, tiempo = 5)
+        assert.equals(360, correrEnLaPlaya.caloriasQueQuema())
+        correrEnLaPlaya.tiempo(90)
+        assert.equals(10200, correrEnLaPlaya.caloriasQueQuema())
     }
 
 
