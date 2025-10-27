@@ -20,9 +20,13 @@ class Maraton inherits Running{
 }
 
 class Remo inherits Rutina{
-
+    override method descanso(){
+        return tiempo / 5
+    }
 }
 
 class RemoDeCompeticion inherits Remo{
-
+    override method descanso(){
+        return 2.max(super() - 3)
+    }
 }
