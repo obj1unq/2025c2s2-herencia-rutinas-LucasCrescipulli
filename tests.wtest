@@ -17,14 +17,14 @@ describe "rutinas"{
     }
 
     test "calorías que quema una rutina de remo"{
-        const remoEnElDelta = new Remo(intensidad = 1.3, tiempo = 5)
+        const remoEnElDelta = new Remo(tiempo = 5)
         assert.equals(520, remoEnElDelta.caloriasQueQuema())
         remoEnElDelta.tiempo(90)
         assert.equals(9360, remoEnElDelta.caloriasQueQuema())
     }
 
     test "calorías que quema una rutina de remo de competición"{
-        const remoEnElCamino = new RemoDeCompeticion(intensidad = 1.7, tiempo = 5)
+        const remoEnElCamino = new RemoDeCompeticion(tiempo = 5)
         assert.equals(510, remoEnElCamino.caloriasQueQuema())
         remoEnElCamino.tiempo(90)
         assert.equals(12750, remoEnElCamino.caloriasQueQuema())

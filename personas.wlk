@@ -2,12 +2,22 @@ import rutinas.*
 
 class Persona{
     var property peso = 0
+
+    method practicar(rutina){           // REVISAR DE LEO
+        self.validarPracticar(rutina)
+
+    }
+
     method pesoQuePierdeConRutina(rutina){
         return  rutina.caloriasQueQuema() / self.kilosPorCaloriaQuePierde()
     }
-    method kilosPorCaloriaQuePierde(){
-        return 
+
+    method validarPracticar(rutina){
+
     }
+
+    method kilosPorCaloriaQuePierde()
+
 }
 
 class PersonaSedentaria inherits Persona{
@@ -18,6 +28,6 @@ class PersonaSedentaria inherits Persona{
 
 class PersonaAtleta inherits Persona{
     override method kilosPorCaloriaQuePierde(){
-        
+         return 8000
     }
 }
